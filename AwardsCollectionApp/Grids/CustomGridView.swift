@@ -47,9 +47,9 @@ struct CustomGridView<Content, T>: View where Content : View {
 
 struct CustomGridView_Previews: PreviewProvider {
     static var previews: some View {
-        CustomGridView(columns: 3, items: [11, 3, 4, 7, 76, 2, 1]) { size ,item  in
+        CustomGridView(columns: 3, items: [11, 3, 4, 7, 76, 2, 1]) { flexSize ,item  in
             Text("\(item)")
-                .frame(width:size, height: size)
+                .frame(width:flexSize, height: flexSize)
         }
        
     }
